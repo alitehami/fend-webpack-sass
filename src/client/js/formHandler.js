@@ -1,3 +1,4 @@
+
 function handleSubmit(event) {
     event.preventDefault()
 
@@ -5,6 +6,7 @@ function handleSubmit(event) {
     let formText = document.getElementById('name').value
 
     Client.checkForName(formText)
+    Client.melbourneWeather();
 
     console.log("::: Form Submitted :::")
     fetch('http://localhost:8081/test')
